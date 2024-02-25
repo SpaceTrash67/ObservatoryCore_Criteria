@@ -1,7 +1,7 @@
 # ObservatoryCore_Criteria
 Collection of Custom Criteria for the ObservatoryCore application supporting exploration in Elite:Dangerous
 
-Custome Criteria can be singular or combined:
+Custome Criteria files can be singular criteria or combined with multiple criteria:
 
 Single_  >> Means the criteria will return for a single celestrial datapoint / search type
 
