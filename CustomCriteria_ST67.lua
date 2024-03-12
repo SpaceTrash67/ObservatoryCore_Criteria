@@ -10,19 +10,19 @@
 -- 20240224		Added Version & Changelog Header & Global Declaration Cleanup help by fjk
 -- 20240118		Very Old Stars
 -- 20231225		Complex Orbits
---				GGG Glowing Green Gas Giant / Bugged Protostars
---				8th Moon of Gas Giant
---				Narrow ring gap with high rotational difference
+--			GGG Glowing Green Gas Giant / Bugged Protostars
+--			8th Moon of Gas Giant
+--			Narrow ring gap with high rotational difference
 -- 20230926		Hot Landable Body
 -- 20230922		Graea Hypue Guardian Sites
 -- 20230215		Giant Star in system
--- 20230210 	Very High Surface Pressure
+-- 20230210 		Very High Surface Pressure
 -- 20220101		Large Angular Diameter of Parent Body
--- 				Narrow rings (Taylors Rings)
--- 				Possible Guardian Ruins
---				Massive Planets
---				Inclined landable body to Ringed Parent
---				Landable with close star proximity				
+-- 			Narrow rings (Taylors Rings)
+-- 			Possible Guardian Ruins
+--			Massive Planets
+--			Inclined landable body to Ringed Parent
+--			Landable with close star proximity				
 -- 20210115		Galactic Records Added - taken from EDSM
 
 
