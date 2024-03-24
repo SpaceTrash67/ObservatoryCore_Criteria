@@ -131,7 +131,7 @@ local uninterestingRingedStarTypes = {
   ['Y'] = true;
 }
 
-if scan.StarType and not uninterestingRingedStarTypes[scan.StarType] and hasRings(scan.Rings) then
+if scan.StarSystem ~= nil and scan.StarType and not uninterestingRingedStarTypes[scan.StarType] and hasRings(scan.Rings) then
   for ring in ringsOnly(scan.Rings) do
     local starTypeDesc = scan.StarType:gsub('_', ' ') ..' star'
     if string.startsWith(scan.StarType, 'D') then
