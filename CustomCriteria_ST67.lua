@@ -20,7 +20,7 @@
 -- 20230210 		Very High Surface Pressure
 -- 20220101		Large Angular Diameter of Parent Body (fjk?)
 -- 			Narrow rings (Taylors Rings) (Vithigar? / fjk?)
--- 			DIASBLED (Now gives error - starts @ line 419) Possible Guardian Ruins [Graea Hypue Sector / Hen 2-233 Guardian Cluster] (Matt G or fjk?)
+-- 			DIASBLED (Now gives error? - starts @ line 425) Possible Guardian Ruins [Graea Hypue Sector / Hen 2-233 Guardian Cluster] (Matt G or fjk?)
 --			Massive Planets
 --			Inclined landable body to Ringed Parent (fjk)
 --			Landable with close star proximity (fjk)				
