@@ -20,7 +20,7 @@
 -- 20230210 		Very High Surface Pressure
 -- 20220101		Large Angular Diameter of Parent Body (fjk?)
 -- 			Narrow rings (Taylors Rings) (Vithigar? / fjk?)
--- 			Possible Guardian Ruins [Graea Hypue Sector / Hen 2-233 Guardian Cluster] (Matt G or fjk?)
+-- 			DIASBLED (Now gives error - starts @ line 419) Possible Guardian Ruins [Graea Hypue Sector / Hen 2-233 Guardian Cluster] (Matt G or fjk?)
 --			Massive Planets
 --			Inclined landable body to Ringed Parent (fjk)
 --			Landable with close star proximity (fjk)				
@@ -28,7 +28,10 @@
 
 
 ::Global::
-function string.starts(String,Start)
+function string.startsWith(String,Start)
+   if (String == nil) then
+     return false
+   end
    return string.sub(String,1,string.len(Start))==Start
 end
 
@@ -419,16 +422,16 @@ if (scan.Rings and scan.Rings.Count == 1 and string.find(scan.Rings[0].Name, ' R
 end
 ::End::
 
--- Favorable for Guardian Ruins (Changed message from 'Possible Guardian Ruins')
-::Criteria::
-if scan.PlanetClass and scan.Landable and scan.SurfaceTemperature >=200 and scan.SurfaceTemperature < 320 and scan.StarSystem ~= nil
-    and (scan.PlanetClass == 'Rocky body' or scan.PlanetClass == 'High metal content body')
-    and scan.AtmosphereType == 'None' and scan.Radius >= 1000000 and scan.SurfaceGravity < (0.4 * 9.81)
-    and string.starts(scan.StarSystem,"Graea Hypue ")
-    then
-        return true, 'Favorable for Guardian Ruins', ''
-end
-::End::
+-- Favorable for Guardian Ruins (Changed message from 'Possible Guardian Ruins') [DISABLED - Gives error/ Investigatiing]
+-- ::Criteria::
+-- if scan.PlanetClass and scan.Landable and scan.SurfaceTemperature >=200 and scan.SurfaceTemperature < 320 and scan.StarSystem ~= nil
+--    and (scan.PlanetClass == 'Rocky body' or scan.PlanetClass == 'High metal content body')
+--    and scan.AtmosphereType == 'None' and scan.Radius >= 1000000 and scan.SurfaceGravity < (0.4 * 9.81)
+--    and string.starts(scan.StarSystem,"Graea Hypue ")
+--    then
+--        return true, 'Favorable for Guardian Ruins', ''
+-- end
+-- ::End::
 
 --Massive Planets
 ::Criteria::
