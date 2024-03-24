@@ -1,29 +1,30 @@
 -- ObsCore CustomCriteria Collection
 -- Compilied by Cmdr SpaceTrash67
--- Version: 20240311
+-- Version: 20240324
 --
--- Note: The Custom Criteria will be appended at the top - with an entry added here in the Change-log Header
+-- Note: The Custom Criteria will generally be appended at the top (keeping the GGG code together is the exception) - with an entry (+credits) added here in the Change-log Header
 --
 -- Change-log
 --
--- 20200311		Ringed, Thin-Ammonia Atmosphere Landable
--- 20240224		Added Version & Changelog Header & Global Declaration Cleanup help by fjk
--- 20240118		Very Old Stars
--- 20231225		Complex Orbits
---			GGG Glowing Green Gas Giant / Bugged Protostars
---			8th Moon of Gas Giant
---			Narrow ring gap with high rotational difference
--- 20230926		Hot Landable Body
--- 20230922		Graea Hypue Guardian Sites
--- 20230215		Giant Star in system
+-- 20240324		Ringed Stars (fjk / reminder from Cmdr Julian Ford)
+--			Added (Cmdr / Coder) credits in each changelog entry - in case I forgot in Criteria
+-- 20200311		Ringed, Thin-Ammonia Atmosphere Landable (Thanks Cmdr Duval McMuttons)
+-- 20240224		Added Version & Changelog Header & Global Declaration Cleanup (Thanks for global help fjk!!)
+-- 20240118		Very Old Stars (Thanks Vithigar for Lua code refinement / tutorial  :-)  )
+-- 20231225		Complex Orbits (Thanks Matt G / error trap by fjk)
+--			GGG Glowing Green Gas Giant / Bugged Protostars (DaftMav)
+--			8th Moon of Gas Giant (Matt G)
+--			Narrow ring gap with high rotational difference (fjk)
+-- 20230926		Hot Landable Body 
+-- 20230215		Giant Star in system 
 -- 20230210 		Very High Surface Pressure
--- 20220101		Large Angular Diameter of Parent Body
--- 			Narrow rings (Taylors Rings)
--- 			Possible Guardian Ruins
+-- 20220101		Large Angular Diameter of Parent Body (fjk?)
+-- 			Narrow rings (Taylors Rings) (Vithigar? / fjk?)
+-- 			Possible Guardian Ruins [Graea Hypue Sector / Hen 2-233 Guardian Cluster] (Matt G or fjk?)
 --			Massive Planets
---			Inclined landable body to Ringed Parent
---			Landable with close star proximity				
--- 20210115		Galactic Records Added - taken from EDSM
+--			Inclined landable body to Ringed Parent (fjk)
+--			Landable with close star proximity (fjk)				
+-- 20210115		Galactic Records Added - taken from EDSM in early 2021...NEVER had one report :-) 
 
 
 ::Global::
@@ -121,6 +122,30 @@ function has_value(tab, val)
     return false
 end
 
+::End::
+
+::Criteria=Ringed Stars::
+local uninterestingRingedStarTypes = {
+  ['L'] = true;
+  ['T'] = true;
+  ['Y'] = true;
+}
+
+if scan.StarType and not uninterestingRingedStarTypes[scan.StarType] and hasRings(scan.Rings) then
+  for ring in ringsOnly(scan.Rings) do
+    local starTypeDesc = scan.StarType:gsub('_', ' ') ..' star'
+    if string.startsWith(scan.StarType, 'D') then
+      starTypeDesc = 'White Dwarf ('.. scan.StarType .. ') star'
+    elseif scan.StarType == 'H' then
+      starTypeDesc = 'Black Hole'
+    elseif scan.StarType == 'N' then
+      starTypeDesc = 'Neutron star'
+    elseif scan.StarType == 'X' then
+      starTypeDesc = 'Exotic star'
+    end
+    return true, 'Ringed '.. starTypeDesc, ''
+  end
+end
 ::End::
 
 ::Criteria::
@@ -248,7 +273,6 @@ end
 ::End::
 
 ::Criteria=Green Gas Giants::
-
 if scan.PlanetClass and string.find(string.lower(scan.PlanetClass), 'giant') then
     if scan.PlanetClass == 'Water giant' then
         if tonumber(string.format('%.6f', scan.SurfaceTemperature)) == waterGiantTemp then
@@ -395,7 +419,7 @@ if (scan.Rings and scan.Rings.Count == 1 and string.find(scan.Rings[0].Name, ' R
 end
 ::End::
 
--- Favorable for Guardian Ruins
+-- Favorable for Guardian Ruins (Changed message from 'Possible Guardian Ruins')
 ::Criteria::
 if scan.PlanetClass and scan.Landable and scan.SurfaceTemperature >=200 and scan.SurfaceTemperature < 320 and scan.StarSystem ~= nil
     and (scan.PlanetClass == 'Rocky body' or scan.PlanetClass == 'High metal content body')
