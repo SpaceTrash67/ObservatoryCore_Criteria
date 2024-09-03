@@ -26,3 +26,13 @@ Other / Related:
 Some Xenologicals like particular environments- try checking the details on the DSN (Deep Space Network) site:
 
 https://ed-dsn.net/en/exobiological-flora/
+
+NOTE:
+ObsCore has received a complete UI Overhaul which was released as ObsCore_v1.0 on 2024-09-02
+While the Custom Criteria written for the original ObsCore_v0.x will remain valid - the new
+ObsCore_v1.x Environment contains many tools to simplify writing of plugins and custom criteria- 
+and the new criteria will NOT be backwards compatible....Please make sure you are selecting the 
+correct version of ObsCore / Plugins / Custom Criteria etc
+
+I will keep the Custom Criteria Files I host in separate folders to assist in recognizing their
+validity
