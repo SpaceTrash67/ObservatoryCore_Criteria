@@ -1,8 +1,8 @@
 -- CUSTOM CRITERIA FOR EVERYONE
 -- Compiled and maintained by CMDR Julian Ford
--- v1.3.0.a
+-- v1.3.0
 -- SpaceTrash67 additions in section 5 (2024-08-27)
--- Added two GGG temp updates from DaftMav from 2024-09-28: Class I: 89.193558 / Class II: 217.840744
+-- v1.3.0.a Added two GGG temp updates from DaftMav from 2024-09-28: Class I: 89.193558 / Class II: 217.840744
 
 --[[Elite Observatory is a phenomenal tool for exploring in Elite Dangerous, and it is all the better
 	because we get to write our own custom criteria, which supplement the default criteria in the app
