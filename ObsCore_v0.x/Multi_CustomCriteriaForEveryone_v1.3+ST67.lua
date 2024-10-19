@@ -2,6 +2,7 @@
 -- Compiled and maintained by CMDR Julian Ford
 -- v1.3.0
 -- SpaceTrash67 additions in section 5 (2024-08-27)
+-- Added two GGG temp updates from DaftMav from 2024-09-28: Class I: 89.193558 / Class II: 217.840744
 
 --[[Elite Observatory is a phenomenal tool for exploring in Elite Dangerous, and it is all the better
 	because we get to write our own custom criteria, which supplement the default criteria in the app
@@ -587,7 +588,7 @@ largeLandableThreshold = 15000000
 	math/comparisons.
 --]]
 KnownGGGTemperatures = {
-		   ['Sudarsky class I gas giant'] = {85.945335, 90.141090, 109.874001, 
+		   ['Sudarsky class I gas giant'] = {85.945335, 89.193558, 90.141090, 109.874001, 
 											 113.841248, 117.776886, 119.986717, 
 											 120.725380, 122.295380, 125.933167, 
 											 126.062111, 128.909470, 129.582138, 
@@ -595,7 +596,7 @@ KnownGGGTemperatures = {
     								  
 		  ['Sudarsky class II gas giant'] = {157.798843, 160.396164, 164.465302, 
     								         174.249985, 204.975662, 206.818893, 
-    								         213.91156, 217.87532, 225.990601, 
+    								         213.91156, 217.840744, 217.87532, 225.990601, 
     								         228.357773, 238.650650},
     								   
 		 ['Sudarsky class III gas giant'] = {276.751648, 299.305664, 370.000000, 
