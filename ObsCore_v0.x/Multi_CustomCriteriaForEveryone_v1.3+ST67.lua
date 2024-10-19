@@ -1,6 +1,6 @@
 -- CUSTOM CRITERIA FOR EVERYONE
 -- Compiled and maintained by CMDR Julian Ford
--- v1.3.0
+-- v1.3.0.a
 -- SpaceTrash67 additions in section 5 (2024-08-27)
 -- Added two GGG temp updates from DaftMav from 2024-09-28: Class I: 89.193558 / Class II: 217.840744
 
