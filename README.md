@@ -19,7 +19,8 @@ https://github.com/Xjph/ObservatoryCore
 
 https://edjp.colacube.net/observatory
 
-
+3.) Additonal ObsCore Plugin / Utilities (also highly recommended!)
+https://github.com/fredjk-gh/ObservatoryPlugins
 
 Other / Related:
 
