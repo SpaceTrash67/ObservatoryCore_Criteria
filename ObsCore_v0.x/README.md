@@ -2,6 +2,6 @@ ObsCore v0.x was from introduction as replacement for ELite Observatory - and 20
 
 While the Custom Criteria should continue to work with either version - the newer format offers both simpler and more powerful Custom Criteria toolset - which will NOT be backwards compatible...So this folder will contain only ObsCore v0.x Criteria
 
-Cmdr Julian Ford' "Custom Criteria For Everyone" files / updates - can be downloaded from the 'Independent Explorers Association' (IEA) Discord \ Observatory-Criteria channel:
+Cmdr Julian Ford' "Custom Criteria For Everyone" original files / updates - can be downloaded from the 'Independent Explorers Association' (IEA) Discord \ #observatory-criteria channel:
 
 https://discord.gg/S9Qrqgeh9D
