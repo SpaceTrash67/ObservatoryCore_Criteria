@@ -39,3 +39,8 @@ correct version of ObsCore / Plugins / Custom Criteria etc
 
 I will keep the Custom Criteria Files I host in separate folders to assist in recognizing their
 validity
+
+Update May 02 2026:
+Cmdr Julian Ford has released updated "Custom Criteria For Everyone" (valid for ObsCore v1.x+ ) - and has a GitHub site for updates going forward (I will likely also reference this elsewhere):
+
+https://github.com/poeticbulldozer/CCFE
